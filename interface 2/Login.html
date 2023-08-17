@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        
+      /* Bordered form */
+      body {
+         background-image: url("https://cutewallpaper.org/21/background-gif-html/15-CSS-Animated-Backgrounds-Pintire.gif");
+        background-color: #cccccc;
+        }
+
+      /*form {
+        border: 3px solid #fffffe;
+        
+      }*/
+      
+      /* Full-width inputs */
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid rgb(252, 251, 250);
+        box-sizing: border-box;
+      }
+      
+      /* Set a style for all buttons */
+      button {
+        background-color: hsl(120, 91%, 66%);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      /* Add a hover effect for buttons */
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      /* Extra style for the cancel button (red) */
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+      
+      /* Center the avatar image inside this container */
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        background-image: url("https://webartdevelopers.com/blog/wp-content/uploads/2020/06/css-particles-background.gif");
+      }
+      
+      /* Avatar image */
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+      
+      /* Add padding to containers */
+      .container {
+        padding: 16px;
+      }
+      
+      /* The "Forgot password" text */
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+      
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+        .cancelbtn {
+          width: 100%;
+        }
+      }
+    
+    </style>
+</head>
+<body>  
+    <form action="action_page.php" method="post">
+        
+      
+        <div class="container">
+            <h1>USER LOGIN</h1>
+          <label for="uname"><b>Mobile No/Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="registerbtn"><a href="http://127.0.0.1:5500/Portal.html">Signin</a></button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <span class="psw"><a href="http://127.0.0.1:5500/Registration.html">New User?</a></span>
+        </div>
+      
+        
+
+        
+      
+    
+</body>
+</html>

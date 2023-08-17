@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Portal</title>
+    <style>
+        
+      /* Bordered form */
+      form {
+        border: 3px solid #f1f1f1;
+      }
+      
+      /* Full-width inputs */
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+      /* Set a style for all buttons */
+      button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      /* Add a hover effect for buttons */
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      /* Extra style for the cancel button (red) */
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+      
+      /* Center the avatar image inside this container */
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+      }
+      
+      /* Avatar image */
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+      
+      /* Add padding to containers */
+      .container {
+        padding: 16px;
+      }
+      
+      /* The "Forgot password" text */
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+      
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+        .cancelbtn {
+          width: 100%;
+        }
+      }
+    
+    </style>
+</head>
+<body>
+
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="data:image/png;base64,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" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+
+          <button type="submit"><a href="http://127.0.0.1:5500/biometric.html">Access through biometrics</a></button>
+
+          <button type="submit"><a href="http://127.0.0.1:5500/mobile-number.html">Access through mobile number</a></button>
+
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          
+        </div>
+      </form>
+      
+    
+</body>
+</html>
